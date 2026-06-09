@@ -1,26 +1,179 @@
-h1 {
-  text-align: center;
-  margin-bottom: 1em;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2em;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #efefef;
 }
 
-.linke_Spalte {
-  grid-column: 1;
-  display: grid;
-  margin-left: 1em;
+.cv {
+    width: 1100px;
+    margin: 20px auto;
+    display: flex;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
 }
 
-.felder {
-  grid-column: 1;
-  margin-bottom: 1em;
+.sidebar {
+    width: 300px;
+    background: #454f5b;
+    color: white;
+    padding: 25px;
 }
 
-.werte {
-  grid-column: 2;
-  margin-left: -15em;
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid #d9d9d9;
+    object-fit: cover;
+}
+
+.sidebar section {
+    margin-bottom: 28px;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.info-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.info-item i {
+    width: 20px;
+    margin-top: 2px;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.hobby-text {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.content {
+    flex: 1;
+    padding: 35px;
+}
+
+.content h1 {
+    font-size: 54px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+header {
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 25px;
+}
+
+header p {
+    margin-bottom: 8px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.timeline-section {
+    margin-top: 35px;
+}
+
+.timeline-section h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.timeline {
+    position: relative;
+    margin-left: 10px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #bdbdbd;
+}
+
+.entry {
+    display: flex;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.entry::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #999;
+}
+
+.date {
+    width: 170px;
+    padding-left: 30px;
+    color: #555;
+    font-size: 15px;
+}
+
+.details {
+    flex: 1;
+}
+
+.details h4 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.details span {
+    color: #666;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.details ul {
+    padding-left: 20px;
+}
+
+.details li {
+    margin-bottom: 6px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.details p {
+    margin-top: 10px;
+    color: #555;
+    line-height: 1.6;
 }
