@@ -1,26 +1,40 @@
 h1 {
+  width: 100%;
   text-align: center;
   margin-bottom: 1em;
 }
 
-.body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+#root {
+  display: flex;
+  flex-direction: column;
   gap: 2em;
+  min-height: 100svh;
+}
+
+.wrapper {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+main {
+  flex: 1;
+}
+
+aside {
+  background-color: rgba(212, 206, 197, 0.63);
+} table {
+  min-width: 100%; 
+} tr td {
+  vertical-align: top;
 }
 
 .linke_Spalte {
-  grid-column: 1;
-  display: grid;
   margin-left: 1em;
+  min-width: 450px;
 }
 
-.felder {
-  grid-column: 1;
-  margin-bottom: 1em;
-}
-
-.werte {
-  grid-column: 2;
-  margin-left: -15em;
+.right-text {
+  text-align: right;
 }

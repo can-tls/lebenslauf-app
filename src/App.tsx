@@ -1,29 +1,33 @@
-
 import './App.css'
 
 function App() {
   return (
-    <>
-      <h1>Lebenslauf</h1>
-
-      <div className='body'>
-        <div className="linke_Spalte">
-          <h2>Persönliche Daten</h2>
-          <div className="felder">
-            <p>Name:</p>
-            <p>Email:</p>
-            <p>Telefon:</p>
-            <p>Adresse:</p>
-          </div>
-          <div className="werte">
-            <p>Can Talas</p>
-            <p>talascan@gmail.com</p>
-            <p>+49 179 4107700</p>
-            <p>Urbanstraße 48 D <br/> 10967 Berlin </p>
-          </div>
-        </div>
-      </div>
-    </>
+    <div className="wrapper">
+      <aside className="linke_Spalte">
+        <h2>Persönliche Daten</h2>
+        <table>
+          <tr>
+            <td>Name:</td>
+            <td>Can Talas</td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>talascan@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Telefon:</td>
+            <td>+49 179 4107700</td>
+          </tr>
+          <tr>
+            <td>Adresse:</td>
+            <td>Urbanstraße 48 D <br /> 10967 Berlin </td>
+          </tr>
+        </table>
+      </aside>
+      <main>
+        <h1>Lebenslauf</h1>
+      </main>
+    </div>
   )
 }
 
